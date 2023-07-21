@@ -1,0 +1,48 @@
+.nav {
+    background-color: #486399;
+    box-shadow: 0 0 4px;
+    font-weight: 700;
+    height: 52px;
+    display: flex;
+    padding-right: 32px;
+    justify-content: center;
+
+    .nav-links {
+        margin-left: 10px;
+        display: flex;
+        height: 52px;
+    }
+
+    .link {
+        min-width: 52px;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 0 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        // Current/activated route
+        &.active {
+            background-color: white;
+            color: #486399;
+            border-bottom: 4px solid #486399;
+        }
+
+        &:hover {
+            background-color: #A1B1D1;
+            color: black;
+            box-shadow: 0 0 1px;
+            border-bottom: 4px solid black;
+        }
+
+        // On button click/focus style
+        &:active {
+            background-color: #72819f;
+            color: white;
+            border-bottom: 4px solid white;
+        }
+    }
+}

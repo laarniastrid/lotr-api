@@ -1,0 +1,56 @@
+.home {
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content-block {
+    width: 300px;
+    height: 300px;
+    margin: 16px;
+    box-shadow: 0 0 4px #85796f;
+    border-radius: 4px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:active {
+      transform: scale(1.05);
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
+
+  .link {
+    position: relative;
+
+    &-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .image-overlay {
+      cursor: pointer;
+      background-color: #677185b4;
+      color: white;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 8px 16px;
+      border-radius: 4px;
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.characters {
+  color: #3F4552;
+  letter-spacing: 1.5px;
+
+  .error {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+
+    &.image {
+      width: 600px;
+      height: 600px;
+    }
+  }
+
+  .pagination {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 20px 20px;
+
+    &-button {
+      cursor: pointer;
+      min-width: 30px;
+      height: 30px;
+      font-size: 18px;
+      font-weight: 700;
+      border: 1px solid white;
+      background-color: white;
+      padding: 4px;
+      border-radius: 2px;
+      text-align: center;
+
+      &:hover {
+        color: #6287D1;
+        background-color: white;
+        box-shadow: 0 0 4px #6287D1;
+      }
+
+      &.selected {
+        color: white;
+        background-color: #6287D1;
+        box-shadow: 0 0 4px #6287D1;
+      }
+
+      &:active {
+        color: white;
+        background-color: #6287D1;
+        box-shadow: 0 0 4px #6287D1;
+      }
+    }
+  }
+
+  .content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .content-block {
+    width: 325px;
+    height: 275px;
+    margin: 16px;
+    box-shadow: 0 0 4px #85796f;
+    border-radius: 4px;
+
+    &:hover {
+      box-shadow: 0 0 4px #486399;
+    }
+  }
+
+  .character {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: #486399;
+      color: white;
+
+      .name {
+        border-bottom: 1px solid white;
+      }
+
+      .link {
+        color: white;
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+
+  .name {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
+  }
+
+  .info {
+    font-size: 16px;
+
+    .item {
+      margin-bottom: 10px;
+    }
+
+    .link {
+      text-decoration: none;
+      color: #6287D1;
+      font-weight: 700;
+    }
+  }
+}
